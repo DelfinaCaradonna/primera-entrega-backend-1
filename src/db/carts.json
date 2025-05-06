@@ -1,0 +1,45 @@
+[
+  {
+    "id": 746,
+    "products": [
+      {
+        "product": "jamon1",
+        "quantity": 5
+      }
+    ]
+  },
+  {
+    "id": 932,
+    "products": [
+      {
+        "product": "jamon1",
+        "quantity": 7
+      },
+      {
+        "product": "vinagre2",
+        "quantity": 3
+      },
+      {
+        "product": "huevos6",
+        "quantity": 12
+      },
+      {
+        "product": "churrasco3",
+        "quantity": 4
+      }
+    ]
+  },
+  {
+    "id": 607,
+    "products": [
+      {
+        "product": "jamon1",
+        "quantity": 9
+      },
+      {
+        "product": "jamon12",
+        "quantity": 4
+      }
+    ]
+  }
+]

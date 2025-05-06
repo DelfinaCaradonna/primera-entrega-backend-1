@@ -1,0 +1,19 @@
+{
+  "name": "entrega-1",
+  "version": "1.0.0",
+  "description": "Programación Backend I: Desarrollo Avanzado de Backend",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon start",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^16.5.0",
+    "express": "^5.1.0",
+    "lodash": "^4.17.21",
+    "nodemon": "^3.1.10"
+  }
+}

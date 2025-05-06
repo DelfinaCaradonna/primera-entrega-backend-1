@@ -1,0 +1,57 @@
+[
+  {
+    "id": 1,
+    "title": "Beldent",
+    "description": "Chicles de menta",
+    "code": "BEL1001",
+    "price": 1000,
+    "status": true,
+    "stock": 150,
+    "category": "golosinas",
+    "thumbnails": "/images/chicle-orbit.jpg"
+  },
+  {
+    "id": 2,
+    "title": "Agua Mineral",
+    "description": "Botella de agua mineral de 500ml",
+    "code": "AGUA1002",
+    "price": 2000,
+    "status": true,
+    "stock": 200,
+    "category": "bebidas",
+    "thumbnails": "/images/agua-mineral.jpg"
+  },
+  {
+    "id": 3,
+    "title": "Chocolate Cofler",
+    "description": "Barra de chocolate con almendras de 150gr",
+    "code": "CHOC1003",
+    "price": 3000,
+    "status": true,
+    "stock": 120,
+    "category": "chocolates",
+    "thumbnails": "/images/snickers.jpg"
+  },
+  {
+    "id": 4,
+    "title": "Red Bull",
+    "description": "Bebida energética de 250ml.",
+    "code": "RB1004",
+    "price": 2500,
+    "status": false,
+    "stock": 80,
+    "category": "bebidas",
+    "thumbnails": "/images/red-bull.jpg"
+  },
+  {
+    "id": 5,
+    "title": "Pringles",
+    "description": "Papas fritas sabor clásico, 150g.",
+    "code": "PRI1005",
+    "price": 5000,
+    "status": true,
+    "stock": 50,
+    "category": "snacks",
+    "thumbnails": "/images/pringles.jpg"
+  }
+]
