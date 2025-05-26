@@ -2,47 +2,51 @@
 
 ## 👩🏼‍💻 Alumna: Delfina Caradonna
 
-## 📦 Primera Entrega
+## 📦 Segunda Entrega
 
-Este proyecto corresponde a la **Primera Entrega** del curso **Programación Backend I**, centrado en el desarrollo avanzado de aplicaciones backend utilizando Node.js y Express.
+Este proyecto corresponde a la **Segunda Entrega** del curso **Programación Backend I**, centrado en el desarrollo avanzado de aplicaciones backend utilizando Node.js y Express.
 
 ### 🛠️ Tecnologías Utilizadas
+
 - Node.js
 - Express
 - JavaScript
+- Handlebars
+- Socket.IO
+- SweetAlert2
 - dotenv
-- nodemon 
+- nodemon
 
 ```bash
 📦 proyecto-backend
+├── 
 ├── 📂 src
+│   ├── 📂 config
+│   │   ├── handlebars.js
+│   │   └── websocket.js
 │   ├── 📂 controllers
-│   │   ├── 📂 carts
-│   │   │   ├── handleAddCart.js
-│   │   │   ├── handleAddProductsInCart.js
-│   │   │   └── handleGetCart.js
-│   │   └── 📂 products
-│   │       ├── handleAddProduct.js
-│   │       ├── handleDeleteProduct.js
-│   │       ├── handleGetProduct.js
-│   │       ├── handleGetProducts.js
-│   │       └── handleModifyProduct.js
+│   │   ├── handleCarts.js
+│   │   ├── handleProducts.js
+│   │   └── handleRealTimeProducts.js
 │   ├── 📂 db
 │   │   ├── carts.json
 │   │   └── products.json
+│   ├── 📂 public
+│   │   ├── 📂 css
+│   │   ├── 📂 images
+│   │   └── 📂 js
 │   ├── 📂 routes
 │   │   ├── carts.js
-│   │   └── products.js
+│   │   ├── index.js
+│   │   ├── products.js
+│   │   └── realTimeProducts.js
 │   ├── 📂 services
 │   │   ├── 📂 carts
-│   │   │   ├── addCarts.js
-│   │   │   ├── getCartById.js
-│   │   │   └── getCarts.js
 │   │   └── 📂 products
-│   │       ├── addProducts.js
-│   │       ├── deleteProduct.js
-│   │       ├── getProductById.js
-│   │       ├── getProducts.js
-│   │       └── modifyProduct.js
+│   ├── 📂 views
+│   │   ├── 📂 layouts
+│   │   ├── 📂 pages
+│   │   └── 📂 partials
 │   └── app.js
 └── index.js
+```

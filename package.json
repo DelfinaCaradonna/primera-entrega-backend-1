@@ -1,6 +1,6 @@
 {
-  "name": "entrega-1",
-  "version": "1.0.0",
+  "name": "entrega-2",
+  "version": "1.1.0",
   "description": "Programación Backend I: Desarrollo Avanzado de Backend",
   "main": "index.js",
   "scripts": {
@@ -8,12 +8,17 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
-  "author": "",
+  "author": "Delfina Caradonna",
   "license": "ISC",
   "dependencies": {
     "dotenv": "^16.5.0",
     "express": "^5.1.0",
+    "express-handlebars": "^8.0.3",
     "lodash": "^4.17.21",
-    "nodemon": "^3.1.10"
+    "nodemon": "^3.1.10",
+    "socket.io": "^4.8.1"
+  },
+  "devDependencies": {
+    "prettier": "3.5.3"
   }
 }

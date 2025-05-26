@@ -1,0 +1,26 @@
+<ul id="productsList">
+  {{#each products}}
+    <li data-id="{{id}}">
+      <div>
+        <h2>{{title}}</h2>
+        <button class="delete-btn" data-id="{{id}}" title="Eliminar">
+          🗑️
+        </button>
+      </div>
+      <div class="productInfoContainer">
+        <div class="productInfo">
+          <p>{{description}}</p>
+          <p><strong>Precio:</strong> ${{price}}</p>
+          <p><strong>Stock:</strong> {{stock}}</p>
+          <p><strong>Categoría:</strong> {{category}}</p>
+        </div>
+        <img
+          src="/public/images/{{thumbnails}}"
+          alt="Imagen de {{title}}"
+          width="100"
+          class="productImg"
+        />
+      </div>
+    </li>
+  {{/each}}
+</ul>

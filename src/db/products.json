@@ -8,7 +8,7 @@
     "status": true,
     "stock": 150,
     "category": "golosinas",
-    "thumbnails": "/images/chicle-orbit.jpg"
+    "thumbnails": "beldent.jpg"
   },
   {
     "id": 2,
@@ -19,7 +19,7 @@
     "status": true,
     "stock": 200,
     "category": "bebidas",
-    "thumbnails": "/images/agua-mineral.jpg"
+    "thumbnails": "agua-mineral.jpg"
   },
   {
     "id": 3,
@@ -30,7 +30,7 @@
     "status": true,
     "stock": 120,
     "category": "chocolates",
-    "thumbnails": "/images/snickers.jpg"
+    "thumbnails": "cofler.jpg"
   },
   {
     "id": 4,
@@ -41,10 +41,10 @@
     "status": false,
     "stock": 80,
     "category": "bebidas",
-    "thumbnails": "/images/red-bull.jpg"
+    "thumbnails": "red-bull.jpg"
   },
   {
-    "id": 5,
+    "id": 756,
     "title": "Pringles",
     "description": "Papas fritas sabor clásico, 150g.",
     "code": "PRI1005",
@@ -52,6 +52,17 @@
     "status": true,
     "stock": 50,
     "category": "snacks",
-    "thumbnails": "/images/pringles.jpg"
+    "thumbnails": "pringles.jpg"
+  },
+  {
+    "id": 975,
+    "title": "Protein Bar",
+    "description": "Barrita de cereal con chips de chocolate y proteína",
+    "code": "00065",
+    "price": 2000,
+    "status": true,
+    "stock": 122,
+    "category": "snacks",
+    "thumbnails": "barrita.jpg"
   }
 ]

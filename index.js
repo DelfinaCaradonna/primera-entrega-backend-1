@@ -1,9 +1,15 @@
-const app = require('./src/app');
+const http = require("http");
+const app = require("./src/app");
+const setupAndGetWebSocket = require("./src/config/websocket");
 
-require('dotenv').config();
+require("dotenv").config();
 
 const PORT = process.env.PORT;
 
-app.listen(PORT, () => {
-    console.log(`Servidor escuchando el puerto ${PORT}`);
+const server = http.createServer(app);
+
+setupAndGetWebSocket(server);
+
+server.listen(PORT, () => {
+  console.log(`Servidor escuchando el puerto ${PORT}`);
 });

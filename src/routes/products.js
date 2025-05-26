@@ -1,12 +1,13 @@
 const express = require("express");
-
-const handleGetProducts = require("../controllers/products/handleGetProducts");
-const handleGetProduct = require("../controllers/products/handleGetProduct");
-const handleAddProduct = require("../controllers/products/handleAddProduct");
-const handleDeleteProduct = require("../controllers/products/handleDeleteProduct");
-const handleModifyProduct = require("../controllers/products/handleModifyProduct");
-
 const router = express.Router();
+
+const {
+  handleGetProducts,
+  handleGetProduct,
+  handleAddProduct,
+  handleDeleteProduct,
+  handleModifyProduct,
+} = require("../controllers/handleProducts");
 
 router.get("/", handleGetProducts);
 router.get("/:pid", handleGetProduct);

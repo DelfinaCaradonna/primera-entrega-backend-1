@@ -1,8 +1,10 @@
 const express = require("express");
 
-const handleAddCart = require("../controllers/carts/handleAddCart");
-const handleGetCart = require("../controllers/carts/handleGetCart");
-const handleAddProductsInCart = require("../controllers/carts/handleAddProductsInCart");
+const {
+  handleAddCart,
+  handleGetCart,
+  handleAddProductsInCart,
+} = require("../controllers/handleCarts");
 
 const router = express.Router();
 
