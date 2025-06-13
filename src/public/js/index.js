@@ -3,7 +3,7 @@ const socket = io();
 const form = document.getElementById("productForm");
 const deleteButton = document.getElementsByClassName("productForm");
 
-form.addEventListener("submit", async (e) => {
+form?.addEventListener("submit", async (e) => {
   e.preventDefault();
 
   const product = {
@@ -104,4 +104,64 @@ socket.on("productAdded", (product) => {
 socket.on("productDeleted", (id) => {
   const item = document.querySelector(`li[data-id="${id}"]`);
   if (item) item.remove();
+});
+
+//filtro y sorting
+
+const getSelectedOption = (id, attribute) => {
+  return (
+    id &&
+    attribute &&
+    Object.values(document.getElementById(id)?.attributes).find(
+      (att) => att.name === attribute
+    ).value
+  );
+};
+
+document.getElementById("categoryFilter").value = getSelectedOption(
+  "categoryFilter",
+  "selected-category"
+);
+
+document
+  .getElementById("categoryFilter")
+  ?.addEventListener("change", (event) => {
+    const getQueryParams = () => {
+      const params = new URLSearchParams(window.location.search);
+      const query = {};
+      for (const [key, value] of params.entries()) {
+        query[key] = value;
+      }
+      return query;
+    };
+    const value = event.target.value !== "" ? event.target.value : undefined;
+    const query = { ...getQueryParams(), category: value };
+    if (!value) {
+      delete query.category;
+    }
+    const urlQuery = new URLSearchParams(query);
+    window.location.href = `/api/products?${urlQuery.toString()}`;
+  });
+
+document.getElementById("sort").value = getSelectedOption(
+  "sort",
+  "selected-sort"
+);
+
+document.getElementById("sort")?.addEventListener("change", (event) => {
+  const getQueryParams = () => {
+    const params = new URLSearchParams(window.location.search);
+    const query = {};
+    for (const [key, value] of params.entries()) {
+      query[key] = value;
+    }
+    return query;
+  };
+  const value = event.target.value !== "" ? event.target.value : undefined;
+  const query = { ...getQueryParams(), sort: value };
+  if (!value) {
+    delete query.sort;
+  }
+  const urlQuery = new URLSearchParams(query);
+  window.location.href = `/api/products?${urlQuery.toString()}`;
 });

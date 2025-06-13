@@ -1,17 +1,17 @@
-const { isEqual } = require("lodash");
-
-const getCarts = require("./getCarts");
+const Cart = require("../../models/cartsModel");
 
 const getCartById = async (id) => {
-    try {
-        const data = await getCarts();
-        const cart = data.find((cart) => isEqual(cart.id, parseInt(id)));
+  try {
+    const cart = await Cart.findById(id).populate("products.product");
 
-        return cart;
-    } catch (error) {
-        console.error("Error al intentar ver los productos del carrito solicitado: ", error);
-        return [];
-    }
+    return cart;
+  } catch (error) {
+    console.error(
+      "Error al intentar ver los productos del carrito solicitado: ",
+      error
+    );
+    return [];
+  }
 };
 
 module.exports = getCartById;

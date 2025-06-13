@@ -2,20 +2,29 @@
 
 ## 👩🏼‍💻 Alumna: Delfina Caradonna
 
-## 📦 Segunda Entrega
+## 📦 Entrega Final
 
-Este proyecto corresponde a la **Segunda Entrega** del curso **Programación Backend I**, centrado en el desarrollo avanzado de aplicaciones backend utilizando Node.js y Express.
+Este proyecto corresponde a la **Entrega Final** del curso **Programación Backend I**, centrado en el desarrollo avanzado de aplicaciones backend utilizando Node.js, Express y MongoDB.
 
-### 🛠️ Tecnologías Utilizadas
+---
 
-- Node.js
-- Express
-- JavaScript
-- Handlebars
-- Socket.IO
-- SweetAlert2
-- dotenv
-- nodemon
+## 🛠️ Tecnologías Utilizadas
+
+- **Node.js**
+- **Express**
+- **JavaScript**
+- **MongoDB** 
+- **Mongoose** 
+- **mongoose-paginate-v2** 
+- **Handlebars** 
+- **Socket.IO** 
+- **SweetAlert2** 
+- **dotenv**
+- **nodemon**
+
+---
+
+## 📁 Estructura del Proyecto
 
 ```bash
 📦 proyecto-backend

@@ -1,0 +1,6 @@
+<select name="category" id="categoryFilter" selected-category={{selectedCategory}}>
+    <option value="">Seleccione una categoría</option>
+    {{#each categories}}
+      <option value="{{this}}" >{{this}}</option>
+    {{/each}}
+</select>

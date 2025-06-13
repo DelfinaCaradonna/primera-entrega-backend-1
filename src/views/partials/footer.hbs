@@ -1,0 +1,11 @@
+<div class="pagination">
+  {{#if pagination.hasPrevPage}}
+    <a href={{pagination.prevLink}} class="nav-btn">⬅ Página {{pagination.prevPage}}</a>
+  {{/if}}
+
+  <span class="page-indicator">Página {{pagination.page}} de {{pagination.totalPages}}</span>
+
+  {{#if pagination.hasNextPage}}
+    <a href={{pagination.nextLink}} class="nav-btn">Página {{pagination.nextPage}} ➡</a>
+  {{/if}}
+</div>

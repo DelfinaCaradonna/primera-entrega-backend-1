@@ -2,7 +2,8 @@
   <nav class="nav-bar">
     <h1 class="logo">Proyecto Coderhouse</h1>
     <div class="nav-buttons">
-      <a href="/api/products" class="nav-btn">Productos</a>
+      <a href="/api/products?page=1&limit=5" class="nav-btn">Productos</a>
+      <a href="/api/carts/{{cartId}}" class="nav-btn">Carrito</a>
       <a href="/api/realTimeProducts" class="nav-btn">Tiempo Real con Socket</a>
     </div>
   </nav>

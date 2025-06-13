@@ -158,3 +158,107 @@ body {
     font-size: 2.2rem;
     background-color: transparent;
   }
+
+  .pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 2rem;
+  }
+  
+  .page-indicator {
+    font-weight: bold;
+    color: #a45d5d;
+  }
+
+  select {
+    padding: 8px 36px 8px 12px; 
+    border: 2px solid #e8b4b8;
+    border-radius: 8px;
+    background-color: #fff0f3;
+    color: #5c4a4a;
+    font-size: 1rem;
+    margin: 10px 0;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background-image: url("data:image/svg+xml,%3Csvg%20width%3D'10'%20height%3D'5'%20viewBox%3D'0%200%2010%205'%20fill%3D'none'%20xmlns%3D'http%3A//www.w3.org/2000/svg'%3E%3Cpath%20d%3D'M0%200L5%205L10%200H0Z'%20fill%3D'%235c4a4a'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right 12px center;
+    background-size: 10px 5px;
+  }
+  
+  select:focus {
+    outline: none;
+    border-color: #e4a3aa;
+    box-shadow: 0 0 5px #f2c6c9;
+  }
+
+  .cart-container {
+    max-width: 700px;
+    margin: 2rem auto;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #6b4a4a;
+    background-color: #f9e9e9;
+    border-radius: 12px;
+    padding: 2rem;
+  }
+  
+  .cart-title {
+    text-align: center;
+    color: #c4717a;
+    margin-bottom: 1.5rem;
+  }
+  
+  .cart-list {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .cart-item {
+    background-color: #f6d6d6;
+    margin-bottom: 1rem;
+    padding: 1rem 1.5rem;
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .cart-item-info {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .product-title {
+    margin: 0 0 0.3rem 0;
+    color: #a65765;
+  }
+  
+  .product-quantity {
+    margin: 0;
+    font-size: 0.9rem;
+    color: #7f5a5a;
+  }
+  
+  .product-price {
+    font-weight: bold;
+    color: #c4717a;
+  }
+  
+  .btn-delete-all {
+    background-color: #f7d6d5;
+    color: #5e4b47;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    border-radius: 6px;
+    transition: background-color 0.3s ease;
+    border: 1px solid #f2baba;
+    cursor: pointer
+  }
+  
+  .btn-delete-all:hover {
+    background-color: #f1b0b7;
+  }
+  

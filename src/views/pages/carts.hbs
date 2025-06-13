@@ -1,0 +1,75 @@
+{{> header }}
+
+<div class="cart-container">
+  <h1 class="cart-title">Tu carrito de compras</h1>
+
+  {{#if products.length}}
+    <button id="deleteAllBtn" class="btn-delete-all">Eliminar todos los productos</button>
+
+    <ul id="cartList">
+      {{#each products}}
+        <li data-pid="{{product._id}}">
+          <div class="cart-item-header">
+            <h2>{{product.title}}</h2>
+            <button class="delete-btn" data-pid="{{product._id}}" title="Eliminar producto">🗑️</button>
+          </div>
+          <div class="cart-item-info">
+            <p><strong>Cantidad:</strong> {{quantity}}</p>
+            <p><strong>Precio:</strong> ${{product.price}}</p>
+          </div>
+        </li>
+      {{/each}}
+    </ul>
+  {{else}}
+    <p class="empty-cart">Tu carrito está vacío</p>
+  {{/if}}
+</div>
+
+<script>
+  const cartId = "{{cartId}}";
+
+  document.getElementById('cartList')?.addEventListener('click', async (e) => {
+    if (e.target.classList.contains('btn-delete-product')) {
+      const pid = e.target.dataset.pid;
+      if (!pid) return;
+
+      if (!confirm('¿Eliminar este producto del carrito? Esta acción no se puede deshacer.')) return;
+
+      try {
+        const res = await fetch(`/api/carts/${cartId}/products/${pid}`, {
+          method: 'DELETE'
+        });
+
+        if (res.ok) {
+          alert('Producto eliminado correctamente');
+          location.reload();
+        } else {
+          alert('Error al eliminar producto');
+        }
+      } catch (error) {
+        alert('Error en la petición');
+        console.error(error);
+      }
+    }
+  });
+
+  document.getElementById('deleteAllBtn')?.addEventListener('click', async () => {
+    if (!confirm('¿Eliminar todos los productos del carrito? Esta acción no se puede deshacer.')) return;
+
+    try {
+      const res = await fetch(`/api/carts/${cartId}`, {
+        method: 'DELETE'
+      });
+
+      if (res.ok) {
+        alert('Todos los productos fueron eliminados');
+        location.reload();
+      } else {
+        alert('Error al eliminar todos los productos');
+      }
+    } catch (error) {
+      alert('Error en la petición');
+      console.error(error);
+    }
+  });
+</script>
